@@ -1,0 +1,38 @@
+name: HomeGUI
+version: 1.0.0
+main: me.homegui.HomeGuiPlugin
+api-version: '1.20'
+folia-supported: true
+description: Hệ thống home bằng GUI (5 home, delay, cooldown, phân quyền LuckPerms).
+softdepend: [LuckPerms]
+
+commands:
+  home:
+    description: Mở menu home
+    usage: /home
+    permission: homegui.use
+
+permissions:
+  homegui.use:
+    description: Dùng lệnh /home và Home 1
+    default: true
+  homegui.home.2:
+    description: Mở khoá Home 2
+    default: op
+  homegui.home.3:
+    description: Mở khoá Home 3
+    default: op
+  homegui.home.4:
+    description: Mở khoá Home 4
+    default: op
+  homegui.home.5:
+    description: Mở khoá Home 5
+    default: op
+  homegui.home.*:
+    description: Mở khoá tất cả Home 2-5
+    default: op
+    children:
+      homegui.home.2: true
+      homegui.home.3: true
+      homegui.home.4: true
+      homegui.home.5: true

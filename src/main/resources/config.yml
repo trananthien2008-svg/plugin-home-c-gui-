@@ -1,0 +1,8 @@
+# Số giây chờ trước khi dịch chuyển về home (0 = dịch chuyển ngay)
+delay-seconds: 5
+
+# Số giây hồi chiêu, tính từ lúc dịch chuyển xong (0 = không hồi chiêu)
+cooldown-seconds: 60
+
+# Huỷ dịch chuyển nếu người chơi di chuyển trong lúc chờ
+cancel-on-move: true
